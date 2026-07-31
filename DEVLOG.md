@@ -3,7 +3,7 @@
 Автор: [@myrron08](https://github.com/myrron08)
 
 Тестовое задание — дашборд приходов и продуктов. Писал для портфолио и показа работодателю.  
-Демо: https://tt.tex-home.cc · Код: https://github.com/myrron08/inventory-crm
+Демо: https://tt.tex-home.cc · Код: https://github.com/myrron08/inventory-crm-dashboard
 
 ---
 

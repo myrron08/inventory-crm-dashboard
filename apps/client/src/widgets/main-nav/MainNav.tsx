@@ -43,7 +43,7 @@ export const MainNav = memo(function MainNav() {
       <footer className="main-nav__footer">
         <a
           className="main-nav__footer-link"
-          href="https://github.com/myrron08/inventory-crm"
+          href="https://github.com/myrron08/inventory-crm-dashboard"
           target="_blank"
           rel="noreferrer"
         >
@@ -51,7 +51,7 @@ export const MainNav = memo(function MainNav() {
         </a>
         <a
           className="main-nav__footer-link"
-          href="https://github.com/myrron08/inventory-crm/blob/main/DEVLOG.md"
+          href="https://github.com/myrron08/inventory-crm-dashboard/blob/main/DEVLOG.md"
           target="_blank"
           rel="noreferrer"
         >

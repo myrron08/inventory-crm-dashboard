@@ -3,7 +3,7 @@
 Тестовое задание: учёт приходов и продуктов на складе.
 
 **Сайт:** https://tt.tex-home.cc  
-**Репозиторий:** https://github.com/myrron08/inventory-crm
+**Репозиторий:** https://github.com/myrron08/inventory-crm-dashboard
 
 Подробнее как собирал и деплоил — в [DEVLOG.md](./DEVLOG.md).
 
