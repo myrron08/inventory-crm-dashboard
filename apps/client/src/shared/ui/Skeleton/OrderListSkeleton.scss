@@ -1,0 +1,26 @@
+.order-list-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-list-skeleton__row {
+  display: grid;
+  grid-template-columns: minmax(180px, 1.4fr) auto auto auto auto;
+  gap: 16px;
+  align-items: center;
+  padding: 18px 20px;
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+}
+
+.order-list-skeleton__icon {
+  border-radius: 999px;
+}
+
+@media (max-width: 1100px) {
+  .order-list-skeleton__row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,44 @@
+@use 'globals';
+
+@import 'bootstrap/scss/bootstrap';
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: var(--header-height) 1fr;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  grid-template-areas:
+    'header header'
+    'sidebar main';
+}
+
+.app-shell__header {
+  grid-area: header;
+}
+
+.app-shell__sidebar {
+  grid-area: sidebar;
+}
+
+.app-shell__main {
+  grid-area: main;
+  min-width: 0;
+  padding: 24px;
+}
+
+@media (max-width: 992px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header'
+      'main';
+  }
+
+  .app-shell__sidebar {
+    display: none;
+  }
+
+  .app-shell__main {
+    padding: 16px;
+  }
+}

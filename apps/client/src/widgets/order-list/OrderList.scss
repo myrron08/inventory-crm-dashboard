@@ -1,0 +1,9 @@
+.order-list-virtual {
+  max-height: min(70vh, 720px);
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.order-list-virtual__item {
+  padding-bottom: 12px;
+}

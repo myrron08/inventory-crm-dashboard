@@ -1,0 +1,21 @@
+.products-page__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.delete-preview {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.delete-preview p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.delete-preview small {
+  color: var(--color-text-muted);
+}

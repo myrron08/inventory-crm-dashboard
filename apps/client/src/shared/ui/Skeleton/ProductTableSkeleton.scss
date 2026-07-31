@@ -1,0 +1,15 @@
+.product-table-skeleton {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.product-table-skeleton__row {
+  display: grid;
+  grid-template-columns: 32px 1fr 80px 120px;
+  gap: 12px;
+  align-items: center;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--color-border);
+}

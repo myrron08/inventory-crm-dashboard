@@ -1,0 +1,7 @@
+node_modules
+dist
+coverage
+package-lock.json
+apps/client/dist
+apps/server/dist
+database/db.mwb

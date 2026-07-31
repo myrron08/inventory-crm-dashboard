@@ -1,0 +1,112 @@
+.product-table {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.product-table__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg-muted);
+}
+
+.product-table__scroll {
+  overflow-x: auto;
+}
+
+.product-table__scroll--virtual {
+  max-height: min(65vh, 640px);
+  overflow: auto;
+}
+
+.product-table__virtual-body {
+  min-height: 120px;
+}
+
+.product-table__grid {
+  min-width: 1100px;
+}
+
+.product-table__head,
+.product-table__row {
+  display: grid;
+  grid-template-columns:
+    28px 40px minmax(220px, 1.6fr) 100px minmax(180px, 1fr)
+    80px 130px minmax(160px, 1fr) 120px minmax(160px, 1fr) 110px 48px;
+  gap: 12px;
+  align-items: center;
+  padding: 14px 20px;
+}
+
+.product-table__head {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.product-table__row {
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color var(--transition-base);
+}
+
+.product-table__row:hover {
+  background: #fafcff;
+}
+
+.product-table__status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+}
+
+.product-table__status-dot--free {
+  background: var(--color-primary);
+}
+
+.product-table__status-dot--repair {
+  background: #64748b;
+}
+
+.product-table__thumb {
+  width: 32px;
+  height: 32px;
+}
+
+.product-table__name {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.product-table__serial {
+  margin: 2px 0 0;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.product-table__muted {
+  color: var(--color-text-muted);
+  font-size: 0.8125rem;
+}
+
+.product-table__price {
+  font-weight: 600;
+  font-size: 0.8125rem;
+}
+
+.product-table__status-text--free {
+  color: #84cc16;
+  font-weight: 600;
+}
+
+.product-table__status-text--repair {
+  color: #64748b;
+  font-weight: 600;
+}

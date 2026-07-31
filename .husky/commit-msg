@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+# Strip Cursor co-author line if the IDE adds it automatically.
+if [ -f "$1" ]; then
+  grep -v '^Co-authored-by: Cursor <cursoragent@cursor.com>$' "$1" > "$1.bak" && mv "$1.bak" "$1"
+fi

@@ -1,0 +1,23 @@
+# Production overlay: docker compose -f docker-compose.yml -f docker-compose.prod.yml up --build -d
+services:
+  server:
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
+      PORT: ${PORT:-3001}
+      CLIENT_ORIGIN: ${CLIENT_ORIGIN:-http://localhost}
+
+  client:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: apps/client/Dockerfile
+      args:
+        VITE_API_URL: ${VITE_API_URL:-}
+        VITE_SOCKET_URL: ${VITE_SOCKET_URL:-}
+    ports:
+      - '${COMPOSE_CLIENT_PUBLISH:-80:80}'
+    depends_on:
+      - server
