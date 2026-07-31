@@ -48,12 +48,6 @@
 - Сортировка продуктов по цене на странице `/products` — чисто на клиенте, список уже пришёл с API.
 - Ссылка «Заметки по разработке» в сайдбаре — на этот файл.
 
-## Структура, если спросят на созвоне
-
-```text
-UI → dispatch(thunk) → axios /api → memoryStore
-GraphQL — второй вход к тем же функциям store, UI его не использует
-```
 
 Redux slices: `orders`, `products`, `tabs`, плюс UI: `orderPanel`, `deleteModal`, `search`, `toast`.
 
@@ -67,6 +61,3 @@ npm run dev
 
 Проверки перед push: `npm run lint && npm run typecheck && npm run test && npm run build`
 
-## Если попросят доработать live
-
-Готов на созвоне: открыть любой файл, объяснить поток, дописать фильтр/endpoint/компонент без подготовки — это и есть проверка, что проект мой.
